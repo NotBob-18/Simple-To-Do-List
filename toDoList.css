@@ -1,0 +1,98 @@
+:root {
+    --background: #ebebeb;
+}
+
+.update-controller {
+    display: none;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: "poppins";
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    background: var(--background);
+    letter-spacing: 1px;
+}
+
+input {
+    height: 2.5rem;
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgb(247, 247, 247);
+    padding: 15px 15px 15px 15px;
+    border-color: rgba(216, 216, 216, 0.192);
+    position: relative;
+    margin-bottom: 0.2rem;
+    box-shadow: -1px 7px 16px -4px rgba(64, 64, 64, 0.83);
+    -webkit-box-shadow: -1px 7px 16px -4px rgba(101, 101, 101, 0.83);
+    -moz-box-shadow: -1px 7px 16px -4px rgba(104, 104, 104, 0.83);
+}
+
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #266DB6;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: "Avenir Next LT W01 Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover,
+.button:active {
+    outline: 0;
+    color: #00132C;
+}
+
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:before {
+    background-color: #D5EDF6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+button:hover:before {
+    background-color: #158bba;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    button {
+        padding: 10px;
+    }
+}
